@@ -1,0 +1,211 @@
+:root {
+  --primary-light: #8abdff;
+  --primary: #6d5dfc;
+  --primary-dark: #5b0eeb;
+
+  --white: #FFFFFF;
+  --greyLight-0: #e3e6eb;
+  --greyLight-4: #d9dfea;
+
+  --greyLight-1: #e3e6eb82;
+  --greyLight-2: #c8d0e7;
+  --greyLight-3: #bec8e4;
+  --greyDark: #383838;
+}
+body {
+  /* display: flex; */
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative; /* Needed to position the pseudo-element */
+  background: none; /* Remove the default background */
+}
+body::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url('img/bg6.png');
+  background-position: center center;
+  background-repeat:  no-repeat;
+  background-attachment: fixed;
+  background-size:  cover;
+  opacity: 0.7; /* Set the desired opacity */
+  z-index: 0.1; /* Place it behind the content */
+}
+.login-container {
+  padding: 2vh;
+  border-radius: 5vh;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgb(255, 255, 255);
+  background: var(--greyLight-1);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.roted-img-section{
+  width: 14vh;
+  height: 14vh;
+  border-radius: 100%;
+  backdrop-filter: blur(0px);
+  /* border: 1px solid rgb(255, 255, 255); */
+  background-color: var(--greyLight-1);
+  box-shadow: inset 2px 0px 8px #bec7ce, inset -4px -4px 8px #ffffff;
+}
+
+.roted-img-second-section{
+  width: 12vh;
+  height: 12vh;
+  background: var(--greyLight-1);
+  box-shadow: .3rem .3rem .6rem var(--greyLight-2),
+ -.2rem -.2rem .5rem var(--white);
+ border-radius: 100%;
+ padding: 0.5vh;
+ border: 1px solid rgb(255, 255, 255);
+}
+
+  /* Custom styles */
+  .image-container {
+    position: absolute;
+    width: 10.8vh; /* Adjust as needed */
+    height: 10.8vh; /* Adjust as needed */
+  
+  /* padding: 0.5rem; */
+  border-radius: 100%;
+  }
+  .image-container img {
+    position: absolute;
+   
+    width: 100%;
+    height: 100%;
+    object-fit: scale-down;
+  }
+  .rotated-image {
+    animation: rotateAnimation 5s linear infinite; /* Adjust animation duration as needed */
+  }
+
+  .inner{
+    width: 8.5vh;
+    height: 8.5vh;
+    position: relative;
+    /* top: -5px;
+    right: 36px; */
+    transition: 0.3s;
+    cursor: pointer;
+  }
+
+
+  .inner:hover {
+    box-shadow: 0 0 10px rgba(255, 3, 3, 0.5); /* Add shadow effect on hover */
+    border-radius: 90%;
+    transform: scale(0.9);
+  }
+  
+  @keyframes rotateAnimation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+.input-group{
+  background: var(--white);
+  border: 1px solid rgba(156, 151, 151, 0.29);
+}
+.captcha {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.btn{
+  padding: 4px 20px;
+  border-radius: 5px;
+  width: 20vh;
+  cursor: pointer;
+  background: #24A3FF;
+  border: none;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    outline: none !important;
+    color: var(--white);
+    font-size: 2vh;
+    font-weight: 700;
+}
+.btn:focus {
+  box-shadow: none;
+  outline: none;
+  border: none;
+  font-size: 2vh;
+    font-weight: 700;
+}
+.login-btn:hover {
+  background:var(--greyLight-4) ;/* Hover background color */
+  color: var(--primary);
+  border: none;
+  font-size: 2vh;
+    font-weight: 700;
+}
+.error-message {
+  color: red;
+  font-size: 0.875em;
+  margin-top: 5px;
+}
+.refresh-captcha {
+  cursor: pointer;
+  color: rgba(128, 128, 128, 0.565);
+  text-decoration: underline;
+  margin-left: 5px;
+}
+#togglePassword{
+  color: rgba(128, 128, 128, 0.565);
+  background:none; border: none;
+}
+.form-control:focus {
+  box-shadow: none;
+  outline: none;
+  background-color: transparent;
+}
+#captchaQuestion{
+  color: gray;
+}
+.form-control {
+  border-radius: 1vh;
+  border: none;
+  background-color:transparent;
+  color: gray !important;
+}
+.form-control::placeholder {
+  color: gray; /* Change this to the desired color */
+  opacity: 1; /* This ensures the color is not affected by opacity */
+}
+.input-group , .btn{
+  border-radius: 2vh;
+}
+.fa-refresh:hover {
+  animation: rotateicon 1s infinite;
+}
+
+@keyframes rotateicon {
+  0% {
+      transform: rotate3d(0, 0, 0, 0deg);
+  }
+
+  100% {
+      transform: rotate3d(0, 0, 1, 360deg);
+  }
+}
+
+
+  @media screen and (max-width: 984px) and (min-width: 288px) {
+    body{
+    height: auto !important;;
+      
+    }
+  }
+  /* @media screen and (max-width:720px) and (min-width: 540px){
+    body{
+      height: auto;
+      background: #000;
+    }
+  } */
+
