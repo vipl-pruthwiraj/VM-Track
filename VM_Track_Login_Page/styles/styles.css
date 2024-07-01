@@ -20,7 +20,7 @@ body {
   align-items: center;
   height: 100vh;
   position: relative; /* Needed to position the pseudo-element */
-  background: none; /* Remove the default background */
+  background: var(--greyLight-1);
 }
 body::before {
   content: '';
@@ -38,7 +38,7 @@ body::before {
 .login-container {
   padding: 2vh;
   border-radius: 5vh;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(15px);
   border: 1px solid rgb(255, 255, 255);
   background: var(--greyLight-1);
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
