@@ -3,27 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Page</title>
+    <title>VM-TRACKnnnnn</title>
+    <link rel="icon" href="https://vasundharasoftware.com/img/logos/NEwLogo.png" type="image/x-icon">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.21.4/dist/css/uikit.min.css" />
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.21.4/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.21.4/dist/js/uikit-icons.min.js"></script>
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/animationStyles.css">
 </head>
 <body>
-      <div class="container-fluid main justify-content-center align-items-center ">
-        <div class="container-fluid ">
+  
+      <div class="container-fluid  justify-content-center align-items-center" >
+        <div class="container-fluid main justify-content-center align-items-center "style="height: 100vh;">
           <div class="row">
             <div class="col-12  col-centered logintab" style="z-index: 600;">
-              <span style="float: right;margin-right: 20px;margin-top: 8px;background: #494844;padding-left: 9px;padding-right: 9px;padding-top: 5px;border: 1px solid antiquewhite;box-shadow: 2px 2px 4px 2px rgba(17, 18, 19, 0.5);"><label style="color: #fad052;font-weight: bold;text-shadow: 2px 2px 4px #000000;">Language:&nbsp;</label> <label style="color: blue;text-shadow: 2px 2px 4px #000000;"><a href="?language=en" style="font-weight: bold;color: white;text-shadow: 2px 2px 4px #000000;">English</a></label><!-- <label style="color: black;">&nbsp;|&nbsp;</label> --><label style="color: red;font-weight: bold;text-shadow: 2px 2px 4px #000000;">&nbsp;|&nbsp;</label><label><a href="?language=mr" style="font-weight: bold;color: white;text-shadow: 2px 2px 4px #000000;">Marathi</a></label></span>
-             <!--  <span style="float: right;margin-right: 20px;margin-top: 0px;background: #494844;padding-left: 9px;padding-right: 9px;padding-top: 5px;border: 1px solid antiquewhite;"><label style="color: white;font-weight: bold;text-shadow: 2px 2px 4px #000000;cursor: pointer;" onclick="getSearchPage()">Search Device</label> </span> -->
-               </div>
-            <div class="col-12 col-lg-6 mt-2">
-                <section class="iq-features  ">
+                <span class="language-section">
+                  <!-- <label class="Language-text">Language:&nbsp;</label>  -->
+                  <label >
+                    <a class="english-text" href="?language=en">English</a>
+                  </label>
+                  <label class="line-between-eng-mr">&nbsp;|&nbsp;</label>
+                  <label>
+                    <a class="marathi-text" href="?language=mr">Marathi</a>
+                  </label>
+                </span>
+            </div>
+            <div class="col-12 col-lg-6 d-flex justify-content-center align-items-center mt-4  ">
+                <section class="iq-features  "  style="overflow: hidden;">
                   <div class="container-fluid d-flex justify-content-center align-items-center ">
                     <div class="row align-items-center">
-                      <!-- <div class="col-lg-3 col-md-12"></div> -->
                       <div class="col-12 ">
                         <div class="holderCircle">
                           <div class="round"></div>
@@ -99,7 +113,7 @@
                               <img src="img/fuleTheft.png" class="mb-3"  alt="">
                             </div>
                             <div class="CirItem title-box CirItem5">
-                              <h2 class="title"><span>Fuel Concerned  Report</span></h2>
+                              <h2 class="title"><span>Fuel Report</span></h2>
                               <p>
                                 Generate detailed reports on fuel consumption to optimize efficiency and cost.
                               </p>
@@ -143,63 +157,72 @@
                           </div>
                         </div>
                       </div>
-                      <div class="col-lg-3 col-md-12"></div>
                     </div>
                   </div>
                 </section>
-              </div>
-            <div class="col-12 col-lg-6  mt-2 ">
+            </div>
+            <div class="col-12 col-lg-6 d-flex justify-content-center align-items-center mt-4    ">
               <div class="container-fluid  h-100 d-flex justify-content-center align-items-center p-0 ">
                 <div class="container-fluid d-block justify-content-center align-items-center">
                   <div class="row justify-content-center align-items-center">
-                  <div class="container-fluid login-container col-lg-9 col-12 mb-md-5 mb-sm-5 mb-lg-0    ">
-                    <div class="container-fluid d-flex justify-content-center  align-items-center">
-                      <div class=" d-flex justify-content-center align-items-center roted-img-section ">
-                        <div class="d-flex justify-content-center align-items-center roted-img-second-section">
-                          <div class="image-container ">
-                            <!-- Stable image -->
-                            <img src="img/outter (1).png" alt="Rotated Image" class="rotated-image" id="rotatingImage">
-                            <!-- Rotated image -->
+                      <div class="container-fluid login-container col-lg-9 col-12 mb-md-5 mb-sm-5 mb-lg-0    ">
+                        <div class="container-fluid d-flex justify-content-center  align-items-center">
+                          <div class=" d-flex justify-content-center align-items-center roted-img-section ">
+                            <div class="d-flex justify-content-center align-items-center roted-img-second-section">
+                              <div class="image-container ">
+                                <img src="img/outter (1).png" alt="Rotated Image" class="rotated-image" id="rotatingImage">
+                              </div>
+                              <a href="https://vasundharasoftware.com/">
+                                <img src="img/inner (1).png" class="inner" alt="Stable Image" id="innerImage">
+                              </a>
+                            </div>
                           </div>
-                          <a href="https://vasundharasoftware.com/">
-                            <img src="img/inner (1).png" class="inner" alt="Stable Image" id="innerImage">
-                          </a>
                         </div>
+                          <form id="loginForm" class="myForm">
+                            <!-- <label for="" class="ml-3" style="font-weight: 700; color:rgba(128, 128, 128, 0.635);">Login</label> -->
+                                <div class="input-group mt-5 " >
+                                  <input type="text" class="form-control" id="username" placeholder="Enter username" required>
+                                </div>
+                              <div class="input-group mt-3  ">
+                                <input type="password" class="form-control " id="password" placeholder="Enter password" required>
+                                <div class="input-group-append p-1" >
+                                  <span class="input-group-text " id="togglePassword"> <i class="fa fa-eye-slash"></i></span>
+                                </div>
+                              </div>
+                              <div class="input-group mt-3 mb-3   d-flex justify-content-between align-items ">
+                                <div class="input-group-append  align-items-center pl-3" >
+                                  <span id="captchaQuestion" ></span>
+                                </div>
+                                <input type="text" class="form-control " id="captchaAnswer" style="border: none;" placeholder="Answer" required>
+                                <div class="input-group-append d-flex justify-content-center align-items-center mr-1 " style=" text-align: center;">
+                                  <span id="refreshCaptcha" class="refresh-captcha mr-3" ><i class="fa fa-refresh"></i></span>
+                                </div>
+                              </div>
+                            <!-- Modify the login button HTML in your form -->
+                              <div class="d-flex justify-content-center align-items-center">
+                                <button type="submit" class="btn login-btn btn-block">
+                                  <span id="loginButtonText">Login</span>
+                              
+                                  
+                                </button>
+                                <img src="img/trip2.png" id="vehicleAnimation" class="vehicle-animation" alt="Vehicle">
+                               <a href="https://vasundharasoftware.com/FLMS/logout">
+                                <img src="img/plant.png" id="vehicleAnimation" class="vehicle-animation2" alt="Vehicle">
+                               </a>
+                                <img src="img/login-bg.png" id="vehicleAnimation" class="vehicle-animation3" alt="Vehicle">
+                                
+
+                              </div>
+                              <div class="container-fluid d-flex justify-content-center mt-2 align-items-center">
+                                <div class="error-message d-flex justify-content-center  align-items-center" style="position: absolute;">
+                                <div id="errorUsername" class="error-message"></div>
+                                <div id="errorPassword" class="error-message ml-2"></div>
+                                <div id="errorCaptcha" class="error-message ml-2"></div>
+                              </div>
+                            </div>
+                          </form>
                       </div>
-                    </div>
-                      <form id="loginForm" class="myForm">
-                        <label for="" class="ml-3" style="font-weight: 700; color:rgba(128, 128, 128, 0.635);">Login</label>
-                            <div class="input-group mt-2 " >
-                              <input type="text" class="form-control" id="username" placeholder="Enter username" required>
-                            </div>
-                          <div class="input-group mt-3  ">
-                            <input type="password" class="form-control " id="password" placeholder="Enter password" required>
-                            <div class="input-group-append p-1" >
-                              <span class="input-group-text " id="togglePassword"> <i class="fa fa-eye-slash"></i></span>
-                            </div>
-                          </div>
-                          <div class="input-group mt-3 mb-3   d-flex justify-content-between align-items ">
-                            <div class="input-group-append  align-items-center pl-3" >
-                              <span id="captchaQuestion" ></span>
-                            </div>
-                            <input type="text" class="form-control " id="captchaAnswer" style="border: none;" placeholder="Answer" required>
-                            <div class="input-group-append d-flex justify-content-center align-items-center mr-1 " style=" text-align: center;">
-                              <span id="refreshCaptcha" class="refresh-captcha mr-3" ><i class="fa fa-refresh"></i></span>
-                            </div>
-                          </div>
-                          <div class="d-flex justify-content-center align-items-center">
-                            <button type="submit" class="btn login-btn  btn-block ">Login</button>
-                          </div>
-                          <div class="container-fluid d-flex justify-content-center mt-2 align-items-center">
-                            <div class="error-message d-flex justify-content-center  align-items-center" style="position: absolute;">
-                            <div id="errorUsername" class="error-message"></div>
-                            <div id="errorPassword" class="error-message ml-2"></div>
-                            <div id="errorCaptcha" class="error-message ml-2"></div>
-                          </div>
-                        </div>
-                      </form>
                   </div>
-                </div>
                 </div>
               </div>
             </div>
