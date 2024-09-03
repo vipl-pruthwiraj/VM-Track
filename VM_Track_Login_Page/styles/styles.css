@@ -28,7 +28,7 @@ body::before {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-image: url('/VM_Track_Login_Page/img/page_bg.png');
+  background-image: url('../img/page_bg.png');
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
